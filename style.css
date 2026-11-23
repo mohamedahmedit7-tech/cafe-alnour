@@ -1,6 +1,11 @@
 
-    body {
-        background-color: #f5e6d3;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}  
+  body {
+        background: linear-gradient(to bottom, #f5e6d3, #d9b99b);
+        min-height: 100vh;
         color: #3b2a1a;
         font-family: Arial, sans-serif;
         text-align: center;
@@ -22,6 +27,15 @@
         list-style: none;
         padding: 0;
     }
+    li {
+  background-color: #fff8f0;
+  border: 1px solid #6f4e37;
+  border-radius: 12px;
+  padding: 14px;
+  margin: 10px auto;
+  max-width: 400px;
+  font-size: 20px;
+}
 @media (max-width: 600px) {
   body {
     font-size: 16px;
@@ -30,4 +44,85 @@
     max-width: 100%;
     height: auto;
   }
+}
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/hero.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  background: rgba(0,0,0,0.45);
+  color: white;
+  font-size: 22px;
+}
+.nav a {
+  color: white;
+  background: none;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.box {
+  margin: auto;
+  background: rgba(255,255,255,0.88);
+  padding: 30px 40px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 500px;
+}
+.box {
+  max-width: 750px;
+  padding: 60px 50px;
+}
+.box h1 {
+  font-size: 48px;
+  color: #3b2415;
+}
+.box p {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.box h1 {
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+.box {
+  padding: 40px 50px;
+}
+.menu-page {
+  background: #f5e6d3;
+  min-height: 100vh;
+}
+.menu-title {
+  text-align: center;
+  font-size: 44px;
+  margin: 35px 0;
+  color: #3b2415;
+}
+.category {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+.category h2 {
+  color: #6b4a35;
+  border-bottom: 2px solid #6b4a35;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+.category li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
 }
